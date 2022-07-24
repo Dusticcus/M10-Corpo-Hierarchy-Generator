@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    background-color: rgb(211, 58, 58);
+    margin: 0;
+    padding: 5px;
+}
+
+p {
+    border: 1px solid grey;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.col,
+.col-8 {
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+        /* white-space: nowrap; */
+}
+
+.card-body {
+    background-color: grey;
+}
