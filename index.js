@@ -159,7 +159,7 @@ function createNewEngineerOrInternOrEndProgram() {
         getNewIntern();
       } else if (answers.moveToEngineerOrIntern === "No") {
 
-        fs.writeFile('./src/index.html', generateHTML(), function (err) {
+        fs.writeFile('./dist/index.html', generateHTML(), function (err) {
           if (err) return console.log(err);
         })
       }
@@ -182,7 +182,7 @@ function generateHTML() {
     engineerSections += `<div class="card float-left"><h3>${engineerArray[i].name}<br>
     ${engineerArray[i].getRole()}</h3>
     <div class="card-body"><p>ID: ${engineerArray[i].id}</p>
-    <p>Email: <a href="mailto:${engineerArray[0].email}">${engineerArray[i].email}<a/></p>
+    <p>Email: <a href="mailto:${engineerArray[0].email}">${engineerArray[i].email}</a></p>
     <p>Github: <a href="https://github.com/${engineerArray[i].github}">${engineerArray[i].github}</a></p>
     </div>
     </div>`;
